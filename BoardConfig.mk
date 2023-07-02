@@ -20,7 +20,7 @@ AB_OTA_PARTITIONS += \
     boot \
     vbmeta_vendor \
     vbmeta_system
-BOARD_USES_RECOVERY_AS_BOOT := true
+BOARD_USES_RECOVERY_AS_BOOT := false
 
 # Architecture
 TARGET_ARCH := arm
@@ -83,6 +83,11 @@ BOARD_INFINIX_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6761
+
+# Recovery
+TARGET_NO_RECOVERY := false
+TW_HAS_NO_RECOVERY_PARTITION := false
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
